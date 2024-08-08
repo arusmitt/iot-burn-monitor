@@ -1,15 +1,14 @@
 #define BLYNK_TEMPLATE_ID "///"
 #define BLYNK_TEMPLATE_NAME "sink monitor"
 #define BLYNK_AUTH_TOKEN "///"
-
 #define BLYNK_PRINT Serial
+
 #include <WiFi.h>
 #include <BlynkSimpleEsp32.h>
 #include <OneWire.h>
 #include <DallasTemperature.h>
 
 char auth[] = BLYNK_AUTH_TOKEN;
-
 char ssid[] = "///";  // type your wifi name
 char pass[] = "///";  // type your wifi password
 
@@ -17,10 +16,8 @@ BlynkTimer timer;
 
 // GPIO where the DS18B20 is connected to
 const int oneWireBus = 4;     
-
 // Setup a oneWire instance to communicate with any OneWire devices
 OneWire oneWire(oneWireBus);
-
 // Pass our oneWire reference to Dallas Temperature sensor 
 DallasTemperature sensors(&oneWire);
 
@@ -43,6 +40,7 @@ void getTemp()
     Serial.print("Temperature : ");
     Serial.println(temperatureF);
 }
+
 void setup()
 {   
   Serial.begin(115200);
