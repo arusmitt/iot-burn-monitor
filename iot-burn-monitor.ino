@@ -1,6 +1,6 @@
-#define BLYNK_TEMPLATE_ID "TMPL2x7IfGw1m"
+#define BLYNK_TEMPLATE_ID "///"
 #define BLYNK_TEMPLATE_NAME "sink monitor"
-#define BLYNK_AUTH_TOKEN "is_lRGBajpaI9lLpnHuBPpeikZwdgzjT"
+#define BLYNK_AUTH_TOKEN "///"
 
 #define BLYNK_PRINT Serial
 #include <WiFi.h>
@@ -10,8 +10,8 @@
 
 char auth[] = BLYNK_AUTH_TOKEN;
 
-char ssid[] = "wifi name";  // type your wifi name
-char pass[] = "wifi pass";  // type your wifi password
+char ssid[] = "///";  // type your wifi name
+char pass[] = "///";  // type your wifi password
 
 BlynkTimer timer;
 
